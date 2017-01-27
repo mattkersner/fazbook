@@ -7,6 +7,6 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "https://sleepy-eyrie-60743.herokuapp.com/"
+    "use_env_variable": "nodemon ./bin/www"
   }
 }
