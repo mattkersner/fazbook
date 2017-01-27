@@ -5,7 +5,7 @@
     <title>Update User</title>
   </head>
   <body>
-    <h1>Create User</h1>
+    <h1>Edit User Information</h1>
     <form
         action="<%= '/users/' + user.id + '?_method=PUT' %>"
         method="POST">
@@ -25,9 +25,9 @@
         Date of Birth
         <input name="dob" type="date" value="<%= user.dob %>">
       </label>
-      <input type="submit" value="Update User">
-      <a href=" <%= '/users/' + user.id%>">Return to Profile</a>
-      <a href="/users">Home</a>
+      <input type="submit" value="Submit">
+      <p><a href=" <%= '/users/' + user.id%>">Return to Profile</a></p>
+      <p><a href="/users">Home</a></p>
     </form>
   </body>
 </html>

@@ -5,8 +5,9 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Welcome to fazbook</h1>
+    <h1>Welcome to Fazbook</h1>
     <a href="/users/new">Create a New User</a>
+    <hr>
     <% users.forEach(function(user) { %>
       <div>
         <a href="<%= '/users/' + user.id %>">

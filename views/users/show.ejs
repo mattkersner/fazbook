@@ -7,12 +7,11 @@
 <body>
   <div>
     <h1>User Information</h1>
-    <span><%= user.firstName %></span>
-    <span><%= user.lastName %></span>
-    <span><%= user.email %></span>
-    <span><%= user.dob %></span>
-    <a href="<%= '/users/' + user.id + '/edit/' %>">Update User</a>
-    <a href="/users/">Home</a>
+    <p><%= user.firstName %> <span><%= user.lastName %></span></p>
+    <p><%= user.email %></p>
+    <p><%= user.dob %></p>
+    <p><a href="<%= '/users/' + user.id + '/edit/' %>"><input type="submit" value="Update User"></a></p>
+    <p><a href="/users/">Home</a></p>
   </div>
 </body>
 </html>
