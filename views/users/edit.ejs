@@ -25,7 +25,9 @@
         Date of Birth
         <input name="dob" type="date" value="<%= user.dob %>">
       </label>
-      <input type="submit" value="Create User">
+      <input type="submit" value="Update User">
+      <a href=" <%= '/users/' + user.id%>">Return to Profile</a>
+      <a href="/users">Home</a>
     </form>
   </body>
 </html>
