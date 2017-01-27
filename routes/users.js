@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var models = require('../server/models/index');
+var moment = require('moment');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   models.User.findAll({}).then(function(users) {
@@ -42,13 +43,13 @@ router.delete('/:id', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
   models.User.findById(req.params.id).then(function(user) {
-    res.render('users/show', { user: user });
+    res.render('users/show', { user: user, moment: moment });
   });
 });
 
 router.get('/:id/edit', function(req, res, next) {
   models.User.findById(req.params.id).then(function(user) {
-    res.render('users/edit', { user: user });
+    res.render('users/edit', { user: user, moment: moment });
   });
 });
 

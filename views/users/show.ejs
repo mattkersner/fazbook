@@ -7,9 +7,9 @@
 <body>
   <div>
     <h1>User Information</h1>
-    <p><%= user.firstName %> <span><%= user.lastName %></span></p>
-    <p><%= user.email %></p>
-    <p><%= user.dob %></p>
+    <h3>Name: <%= user.firstName %> <span><%= user.lastName %></span></h3>
+    <h3>Email: <%= user.email %></h3>
+    <h3>Date of Birth: <%= moment(user.dob).format('YYYY-MM-DD') %></h3>
     <p><a href="<%= '/users/' + user.id + '/edit/' %>"><input type="submit" value="Update User"></a></p>
     <p><a href="/users/">Home</a></p>
   </div>
